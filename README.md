@@ -680,3 +680,57 @@ Tasks:
 • Test password strength indicator
 • Test confirm password mismatch validation
 • Add Register link on the Login page
+
+
+
+ Day 16 – Dashboard Development (Jun-16)
+
+On the sixteenth day, the focus was on developing the dashboard interface, which acts as the central hub of the application. The dashboard is one of the most important components because it provides users with a summarized and real-time view of the system.
+The dashboard was designed separately for both users (passengers) and admin. For passengers, the dashboard displays key information such as available buses, live tracking options, route summaries, and quick navigation to important features. For administrators, the dashboard provides a broader overview, including total vehicles, active routes, system status, and monitoring tools.
+The frontend of the dashboard was developed using modern web technologies such as React (or HTML, CSS, and JavaScript). Components were structured in a modular way to ensure reusability and scalability. Cards, tables, and widgets were used to display information in a clean and organized format.
+Special attention was given to integrating real-time data into the dashboard. APIs were prepared to fetch live vehicle data and display it dynamically. This ensures that users always see updated information without needing to refresh the page manually.
+User experience (UX) was also considered during development. The dashboard layout was kept simple, intuitive, and responsive so that it can be accessed from both desktop and mobile devices.
+By the end of Day 16, a functional dashboard UI was successfully developed, providing a central control panel for users to interact with the system.
+
+
+ 
+ Day 17 – CRUD Form Development (Jun-17)
+On the seventeenth day, the focus was on implementing CRUD (Create, Read, Update, Delete) operations through forms. These operations are essential for managing system data such as vehicles, routes, stops, and users.
+Forms were created for adding new records (Create), viewing existing records (Read), modifying data (Update), and deleting unwanted entries (Delete). Each form was designed with proper input fields, labels, and validation rules to ensure accurate data entry.
+For example, the vehicle management form allows admins to add a new vehicle by entering details such as vehicle number, driver name, and capacity. Similarly, route management forms allow adding and updating route details.
+Frontend forms were connected to backend APIs using HTTP requests. Data entered by users is sent to the server, processed, and stored in the database. Responses from the server are displayed to users as success or error messages.
+Validation was an important part of this phase. Both frontend and backend validations were implemented to prevent invalid data from being stored. For example, empty fields, incorrect formats, and duplicate entries were handled properly.
+By the end of Day 17, all CRUD forms were completed and integrated with the backend, allowing full data management functionality in the system.
+
+
+
+ Day 18 – Table & Search Features (Jun-18)
+On the eighteenth day, the system was enhanced with data table and search functionalities. These features improve usability by allowing users to view and filter large amounts of data efficiently.
+Tables were implemented to display structured data such as vehicle lists, route details, and user information. Each table includes columns representing different attributes and rows representing individual records.
+To make the tables more interactive, features such as sorting, pagination, and filtering were added. This allows users to navigate through data easily without being overwhelmed.
+A search functionality was also implemented, enabling users to quickly find specific records. For example, users can search for a particular bus using its number or find routes based on source and destination.
+The search feature works by sending queries to the backend, where data is filtered and returned based on user input. This ensures fast and accurate results.
+Additionally, responsive design techniques were applied so that tables can adapt to different screen sizes.
+By the end of Day 18, data listing and search features were fully functional, significantly improving user interaction with the system.
+
+
+ 
+ Day 19 – Frontend Testing (Jun-19)
+On the nineteenth day, the focus was on testing the frontend components to ensure that the application works correctly and provides a smooth user experience.
+Different types of testing were performed, including functional testing, UI testing, and usability testing. Each feature of the application, such as login, registration, dashboard, forms, and navigation, was tested individually.
+Errors and bugs were identified during testing, such as incorrect data display, broken links, or UI misalignment issues. These issues were fixed to improve the overall quality of the application.
+Cross-browser testing was also performed to ensure that the application works consistently across different browsers like Chrome, Edge, and Firefox.
+Responsiveness was tested on different screen sizes, including mobile and tablet devices, to ensure that the UI adapts properly.
+User feedback was considered to make improvements in design and functionality. This helps in making the system more user-friendly.
+By the end of Day 19, the frontend was thoroughly tested and refined, ensuring that it is stable, reliable, and ready for backend integration.
+
+ 
+ 
+ Day 20 – Spring Boot Project Setup (Jun-20)
+On the twentieth day, the backend development phase was initiated by setting up a Spring Boot project. Spring Boot is a powerful framework used for building robust and scalable backend applications in Java.
+The project was initialized using tools like Spring Initializer, and dependencies such as Spring Web, Spring Data JPA, and MySQL Driver were added. The project structure was organized into different layers, including controller, service, and repository.
+Configuration files were set up to connect the application with the MySQL database. Properties such as database URL, username, and password were defined.
+Basic REST APIs were created to test the setup and ensure that the backend is functioning correctly. These APIs act as a bridge between the frontend and the database.
+The server was successfully started, and initial endpoints were tested using tools like Postman.
+By the end of Day 20, the backend environment was fully set up and ready for further development, including database connectivity and API creation.
+
