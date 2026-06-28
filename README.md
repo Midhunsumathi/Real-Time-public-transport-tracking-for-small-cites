@@ -734,3 +734,118 @@ Basic REST APIs were created to test the setup and ensure that the backend is fu
 The server was successfully started, and initial endpoints were tested using tools like Postman.
 By the end of Day 20, the backend environment was fully set up and ready for further development, including database connectivity and API creation.
 
+
+
+
+ Day 21 – Database Connectivity (Jun-21)
+On the twenty-first day of the project development process, the primary focus was on establishing a strong and reliable connection between the backend application and the database system. This step is extremely important because the entire application depends on data storage and retrieval for its functioning.
+A relational database management system, specifically MySQL, was selected for storing all application-related data. This includes information such as vehicle details, route information, bus stops, user data, and real-time tracking updates. The backend application, developed using Spring Boot, was configured to connect with the database using the application.properties file.
+Key configurations such as the database URL, username, password, driver class name, and Hibernate dialect were defined carefully. Spring Data JPA was used as the ORM (Object Relational Mapping) tool, which simplifies database interaction by converting Java objects into database records.
+Hibernate was configured to automatically create and update database tables based on entity classes. This feature reduced manual database setup efforts. After configuration, the application was executed, and logs were monitored to ensure that the connection was successfully established.
+To verify the setup, sample data insertion and retrieval operations were performed. These tests confirmed that the backend could communicate with the database without any issues.
+By the end of Day 21, a stable and fully functional database connection was successfully implemented, forming the backbone for further backend development.
+
+
+
+Day 22 – Entity & Repository Creation (Jun-22)
+On the twenty-second day, the focus shifted to designing the data layer of the application by creating entity classes and repository interfaces.
+Entity classes were created to represent database tables. Each entity corresponds to a specific module in the system, such as Vehicle, Route, User, and TrackingData. These classes were annotated with @Entity, and fields were mapped to table columns using annotations like @Column.
+Primary keys were defined using @Id and @GeneratedValue. Relationships between entities were also implemented using annotations such as @OneToMany, @ManyToOne, and @JoinColumn. These relationships helped in maintaining data integrity and establishing links between different tables.
+Next, repository interfaces were created by extending JpaRepository. These repositories provide built-in methods such as save(), findAll(), findById(), and deleteById(), eliminating the need for writing complex SQL queries.
+Custom query methods were also implemented based on naming conventions, such as finding vehicles by route ID or retrieving tracking data based on timestamps.
+This structured approach improved code readability and maintainability.
+By the end of Day 22, the application’s data layer was completely defined, enabling smooth communication between backend logic and database operations.
+
+
+
+Day 23 – REST API Development (Jun-23)
+On the twenty-third day, the focus was on building RESTful APIs, which act as a communication bridge between the frontend and backend.
+Controller classes were created using the @RestController annotation. These controllers handle incoming HTTP requests and return appropriate responses. APIs were designed for various modules such as vehicles, routes, users, and tracking systems.
+Different HTTP methods were used:
+GET → Fetch data
+POST → Insert new data
+PUT → Update existing data
+DELETE → Remove data
+Each API endpoint was mapped using annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.
+JSON format was used for data exchange. Request bodies were mapped to Java objects, and responses were returned in structured JSON format.
+Error handling mechanisms were also implemented using exception handling to provide meaningful error messages to users.
+Testing was performed using Postman to verify API functionality.
+By the end of Day 23, a complete set of CRUD APIs was successfully developed, enabling frontend-backend communication.
+
+ 
+ 
+ Day 24 – Authentication Module (Jun-24)
+On the twenty-fourth day, the focus was on implementing a secure authentication system.
+Authentication ensures that only authorized users can access the system. A login module was created where users can enter their credentials (username and password).
+Spring Security was used to implement authentication and authorization mechanisms. Passwords were encrypted using hashing techniques before storing them in the database, ensuring data security.
+Role-based access control was implemented, where users were assigned roles such as admin and normal user. Admin users have additional privileges like managing vehicles and routes.
+Login APIs were developed and integrated with the frontend login page. Token-based authentication (such as JWT) can also be used to maintain user sessions securely.
+By the end of Day 24, the system had a secure login and authentication mechanism, protecting user data and application access.
+
+
+ 
+ Day 25 – Backend Business Logic (Jun-25)
+On the twenty-fifth day, the core backend logic was implemented in the service layer.
+Service classes were created to handle all business operations. These classes act as a bridge between controllers and repositories.
+Key functionalities implemented include:
+Processing real-time tracking data
+Assigning vehicles to routes
+Calculating estimated arrival times (ETA)
+Managing user requests and responses
+The logic was designed to be modular and reusable, ensuring scalability of the application.
+Data validation rules were also implemented to ensure only valid data is processed and stored.
+This layer plays a crucial role in making the system intelligent rather than just a data storage application.
+By the end of Day 25, the backend was capable of performing complex operations required for real-time tracking.
+
+
+
+
+ Day 26 – API Testing using Postman (Jun-26)
+On the twenty-sixth day, all developed APIs were tested thoroughly using Postman.
+Each endpoint was tested by sending different types of requests and analyzing responses. Both positive and negative test cases were considered.
+Test scenarios included:
+Valid data input
+Invalid data input
+Missing fields
+Unauthorized access
+HTTP status codes such as 200, 201, 400, and 404 were verified.
+Any bugs or issues identified during testing were fixed immediately. API performance and response time were also evaluated.
+A detailed API testing report was prepared, documenting all test cases and results.
+By the end of Day 26, all APIs were verified and ensured to be reliable and efficient.
+
+
+
+ Day 27 – Frontend & Backend Integration (Jun-27)
+On the twenty-seventh day, the frontend and backend were integrated to form a complete working system.
+API calls were implemented in the frontend using Axios or Fetch API. Data from the backend was dynamically displayed in the UI.
+Features such as login, dashboard, tracking system, and CRUD operations were tested end-to-end.
+Integration issues such as incorrect API URLs, data mismatch, and response errors were identified and fixed.
+This step ensured seamless communication between frontend and backend.
+By the end of Day 27, the application was fully functional as a complete system.
+
+
+
+
+ Day 28 – Bug Fixing & Validation (Jun-28)
+On the twenty-eighth day, the focus was on improving system stability by fixing bugs and performing validation.
+Various issues were identified and resolved:
+UI alignment problems
+Backend logic errors
+API failures
+Data inconsistencies
+Validation rules were strengthened in both frontend and backend.
+Performance optimizations were also implemented to improve speed and efficiency.
+By the end of Day 28, the system was stable, optimized, and ready for final deployment.
+
+
+
+
+
+
+
+
+
+
+
+
+
