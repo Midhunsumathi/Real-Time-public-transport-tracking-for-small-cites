@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🚍 Transport Tracker</h1>
+
+            <h3>Live Bus Location</h3>
+            <p>
+                <strong>🚌 Bus Number :</strong>
+                <span>TN-47 AB 1234</span>
+            </p>
+            <p>
+                <strong>📍 Latitude :</strong>
+                <span id="lat">Loading...</span>
+            </p>
+
+            <p>
+                <strong>📍 Longitude :</strong>
+                <span id="lon">Loading...</span>
+            </p>
+            <p>
+                <strong>🛣 Route :</strong>
+                <span>V.S.B Engineering College ➜ Karur Bus Stand</span>
+            </p>
+            <p>
+                <strong>⏳ Predicted Delay :</strong>
+                <span id="delay">Loading...</span>
+            </p>
+
+            <p>
+                <strong>🚦 Status :</strong>
+                <span id="status">Checking...</span>
+            </p>
+            <p>
+            <button onclick="refreshData()">
+                🔄 Refresh
+            </button>
+            <p style="text-align:center;color:#666;font-size:15px;margin-top:15px;">
+    Live Transport Tracking using Machine Learning.
+</p>
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+<hr>
+<h3 style="text-align:center;color:#0d6efd;">
+V.S.B Engineering College
+</h3>
+
+<p style="text-align:center;">
+Department of Artificial Intelligence and Machine Learning
+</p>
+
+<p style="text-align:center;">
+Mini Project 2026
+</p>
+
+<p style="text-align:center;">
+<b>Developed By :</b> MIDHUN S
+</p>
+<div class="footer">
+
+<h3>V.S.B Engineering College</h3>
+
+<p>Department of Artificial Intelligence and Machine Learning</p>
+
+<p>Mini Project - Transport Tracker</p>
+
+<p><strong>Developed By :</strong> MIDHUN S</p>
+
+</div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
