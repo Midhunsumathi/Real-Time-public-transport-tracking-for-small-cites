@@ -840,7 +840,7 @@ By the end of Day 28, the system was stable, optimized, and ready for final depl
 
 PROJECT URL : 
 http://127.0.0.1:5500/frontend/index.html
-I have give the project url which we can open in the browser to see the frontend which i have developed. 
+I have uploaded the project url which we can open in the browser to see the frontend which i have developed. 
 
 
 
