@@ -843,6 +843,7 @@ http://127.0.0.1:5500/frontend/index.html
 I have uploaded the project url which we can open in the browser to see the frontend which i have developed. 
 
 
+<img width="1887" height="912" alt="Screenshot 2026-07-06 104657" src="https://github.com/user-attachments/assets/e5681a17-aac7-4e59-8a40-d84be0c46192" />
 
 
 
